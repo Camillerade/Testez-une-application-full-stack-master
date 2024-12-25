@@ -1,32 +1,44 @@
 # Yoga
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
+Ce projet a été généré avec **Angular CLI** version 14.1.0.
 
-## Start the project
+## Prérequis
 
-Git clone:
+Avant de démarrer, vous devez avoir installé les outils suivants sur votre machine :
 
-> git clone (https://github.com/Camillerade/Testez-une-application-full-stack-master)
-Go inside folder:
+- **Java 11** ou version supérieure
+- **NodeJS 16** ou version supérieure
+- **MySQL**
+- **Angular CLI 14** ou version supérieure
+
+## Démarrer le projet
+### 1. Cloner le projet
+
+git clone https://github.com/Camillerade/Testez-une-application-full-stack-master
+
+Aller dans le dossier:
 
 > cd yoga
 
-Install dependencies:
+##Installer les dépendances
 
 > npm install
 
-Launch Front-end:
+##Lancer le Front-end
 
 > npm run start;
 
+# Ressources
 
-## Ressources
+## Environnement Mockoon
 
-### Mockoon env 
+Vous pouvez importer un environnement Mockoon pour simuler les API si nécessaire.
 
-### Postman collection
+## Collection Postman
 
 For Postman import the collection
+
+Pour importer la collection Postman, utilisez le fichier suivant :
 
 > ressources/postman/yoga.postman_collection.json 
 
@@ -34,38 +46,76 @@ by following the documentation:
 
 https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-data-into-postman
 
+## Base de données MySQL
 
-### MySQL
+Un script SQL pour créer le schéma de la base de données est disponible dans ressources/sql/script.sql.
 
-SQL script for creating the schema is available `ressources/sql/script.sql`
-
-By default the admin account is:
-- login: yoga@studio.com
-- password: test!1234
+Par défaut, le compte administrateur est :
+**Login : yoga@studio.com
+**Mot de passe : test!1234
 
 
-### Test
+## Tests
 
-#### E2E
+## Tests End-to-End (E2E)
 
-Launching e2e test:
+Pour lancer les tests End-to-End (E2E) :
 
 > npm run e2e
 
-Generate coverage report (you should launch e2e test before):
+## Lancer le Front-end 
+
+Pour démarrer le front-end avec Angular, utilisez la commande suivante :
+
+> npm run start
+
+Cela démarrera le serveur de développement et l'application sera accessible à l'adresse http://localhost:4200.
+
+# Ressources
+
+## Environnement Mockoon
+
+Vous pouvez importer un environnement Mockoon pour simuler les API si nécessaire.
+
+## Collection Postman
+
+Pour importer la collection Postman, utilisez le fichier suivant :
+
+ressources/postman/yoga.postman_collection.json
+
+Suivez la documentation de Postman pour importer cette collection :
+Documentation d'importation de données dans Postman
+
+## Base de données MySQL
+
+Un script SQL pour créer le schéma de la base de données est disponible dans ressources/sql/script.sql.
+Par défaut, le compte administrateur est :
+
+**Login : yoga@studio.com**
+**Mot de passe : test!1234**
+
+## Tests
+
+## Tests End-to-End (E2E)
+
+Pour lancer les tests End-to-End (E2E) :
 
 > npm run e2e:coverage
 
-Report is available here:
+Le rapport sera disponible ici :
 
 > front/coverage/lcov-report/index.html
 
-#### Unitary test
+## Tests Unitaires
 
 Launching test:
 
 > npm run test
 
-for following change:
+Pour suivre les changements en temps réel pendant le développement, vous pouvez exécuter :
 
 > npm run test:watch
+
+## Support
+Si vous avez des questions ou des problèmes, n'hésitez pas à ouvrir une issue sur le dépôt GitHub du projet.
+
